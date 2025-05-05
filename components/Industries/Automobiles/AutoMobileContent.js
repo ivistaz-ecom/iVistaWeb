@@ -61,7 +61,7 @@ const AutoMobileContent = () => {
                 </Container>
               </div>
 
-              <div className="position-relative" fluid>
+              <div className="position-relative">
                 <div className="timeline-badge3 mt-5 p-0"> </div>
                 <Container className="iv-bg pt-5 pb-5" fluid>
                   <p className="text-white para-text text-center w-80 mx-auto fs-3 px-md-5">
