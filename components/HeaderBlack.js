@@ -39,6 +39,35 @@ function HeaderBlackNew({ setChatVisible }) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const serviceMenuTitles = {
+    "/service/content-development-b2b-b2c": "Content Development (B2B & B2C)",
+    "/service/design": "Design",
+    "/service/search-engine-marketing": "Search Engine Marketing",
+    "/service/search-engine-optimization": "Search Engine Optimization",
+    "/service/social-media-marketing": "Social Media Marketing",
+    "/service/organic-social-media": "Social Media - Organic ",
+    "/service/website-design-and-development": "Website Design & Development"
+  };
+
+  const industryMenuTitles = {
+    "/industries/appliances": "Appliances",
+    "/industries/automobiles": "Automobiles",
+    "/industries/beauty-wellness": "Beauty & Wellness",
+    "/industries/fashion-accessories": "Fashion & Accessories",
+    "/industries/hospitality": "Hospitality",
+    "/industries/jewellery": "Jewelery",
+    "/industries/ngos": "NGOs",
+    "/industries/technology-IT": "Techn/IT"
+  };
+
+  const companyMenuTitles = {
+    "/our-team": "Team",
+    "/our-clients": "Clients",
+    "/mastery/about-us": "About Us",
+    "/careers": "Careers",
+    "/mastery-art-performance": "M.A.P"
+  };
+
   return (
     <>
       <style>{`
@@ -80,9 +109,8 @@ function HeaderBlackNew({ setChatVisible }) {
       `}</style>
 
       <Container
-        className={`p-0 position-fixed z-index-100 m-0 w-100 header-container ${
-          scrolled ? "header-scrolled" : ""
-        } ${pathname === "/our-team" ? "bg-white" : ""}`}
+        className={`p-0 position-fixed z-index-100 m-0 w-100 header-container ${scrolled ? "header-scrolled" : ""
+          } ${pathname === "/our-team" ? "bg-white" : ""}`}
         fluid
       >
         <Container className="w-80">
@@ -101,19 +129,17 @@ function HeaderBlackNew({ setChatVisible }) {
                 onMouseEnter={handleMouseEnter}
                 className={
                   pathname.startsWith("/art") ||
-                  pathname.startsWith("/service") ||
-                  pathname === "/our-clients"
+                    pathname.startsWith("/service") ||
+                    pathname === "/our-clients"
                     ? "btn btn-outline-custom"
                     : "btn btn-outline"
                 }
                 type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar"
                 aria-label="Toggle navigation"
               >
                 <FaBars size={27} />
               </Button>
+
             </div>
           </nav>
         </Container>
@@ -144,21 +170,13 @@ function HeaderBlackNew({ setChatVisible }) {
                     <NavDropdown.Item href="/art/services" className="nav-overview">
                       Overview
                     </NavDropdown.Item>
-                    {[
-                      "/service/content-development-b2b-b2c",
-                      "/service/design",
-                      "/service/search-engine-marketing",
-                      "/service/search-engine-optimization",
-                      "/service/social-media-marketing",
-                      "/service/organic-social-media",
-                      "/service/website-design-and-development",
-                    ].map((path) => (
+                    {Object.entries(serviceMenuTitles).map(([path, label]) => (
                       <NavDropdown.Item
                         key={path}
                         href={path}
                         className={`nav-dropdown p-2 ${isActive(path)}`}
                       >
-                        {path.split("/").pop().replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}
+                        {label}
                       </NavDropdown.Item>
                     ))}
                   </NavDropdown>
@@ -173,22 +191,13 @@ function HeaderBlackNew({ setChatVisible }) {
                     <NavDropdown.Item href="/performance/industries" className="nav-overview">
                       Overview
                     </NavDropdown.Item>
-                    {[
-                      "/industries/appliances",
-                      "/industries/automobiles",
-                      "/industries/beauty-wellness",
-                      "/industries/fashion-accessories",
-                      "/industries/hospitality",
-                      "/industries/jewellery",
-                      "/industries/ngos",
-                      "/industries/technology-IT",
-                    ].map((path) => (
+                    {Object.entries(industryMenuTitles).map(([path, label]) => (
                       <NavDropdown.Item
                         key={path}
                         href={path}
                         className={`nav-dropdown p-2 ${isActive(path)}`}
                       >
-                        {path.split("/").pop().replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}
+                        {label}
                       </NavDropdown.Item>
                     ))}
                   </NavDropdown>
@@ -206,19 +215,13 @@ function HeaderBlackNew({ setChatVisible }) {
                   </li>
                   <li className="divider-center"><hr className="m-divider" /></li>
                   <NavDropdown title="Company" id="navbarScrollingDropdown" className="custom-nav-company">
-                    {[
-                      "/our-team",
-                      "/our-clients",
-                      "/mastery/about-us",
-                      "/careers",
-                      "/mastery-art-performance",
-                    ].map((path) => (
+                    {Object.entries(companyMenuTitles).map(([path, label]) => (
                       <NavDropdown.Item
                         key={path}
                         href={path}
                         className={`nav-dropdown px-2 ${isActive(path)}`}
                       >
-                        {path.split("/").pop().replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}
+                        {label}
                       </NavDropdown.Item>
                     ))}
                   </NavDropdown>

@@ -38,7 +38,7 @@ const JewellryContent = () => {
             <div className="position-relative iv-bg">
               <div className="timeline-badge3 mt-5"></div>
               <Container className="pt-5 pb-5 p-lg-5 ">
-                <p className=" text-white fs-2">
+                <p className=" text-white fs-2 text-center">
                   {" "}
                   We will help your business keep up with this dynamic industry
                   by:

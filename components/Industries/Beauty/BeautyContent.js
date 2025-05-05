@@ -54,7 +54,7 @@ const BeautyContent = () => {
             <div className="position-relative iv-bg">
               <div className="mt-3"></div>
               <Container className=" pb-5 pt-5 p-lg-5">
-                <p className="text-white fs-2">
+                <p className="text-white text-center fs-2">
                   To help your brand to stand out in a highly crowded market, we
                   will:
                 </p>

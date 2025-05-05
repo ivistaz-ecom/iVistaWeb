@@ -41,7 +41,7 @@ const TechContetn = () => {
             <div className="position-relative iv-bg ">
               <div className="timeline-badge3 mt-5"></div>
               <Container className="p-lg-5 p-3">
-                <p className=" text-white fs-2">
+                <p className=" text-white fs-2 text-center">
                   {" "}
                   Our digital marketing services for Tech and IT brands include:
                 </p>
@@ -97,7 +97,7 @@ const TechContetn = () => {
               <p className="fs-2 mb-3">
                 Smarter, Faster, AI-Powered Marketing for Tech Brands
               </p>
-              <Link href="/ai-powered-marketing" className="btn-18 p-2 px-0">
+              <Link href="/ai-powered-marketing" className="btn-18 p-2 px-0 z-0">
                 Explore Solutions
               </Link>
             </Container>
