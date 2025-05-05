@@ -25,7 +25,7 @@ const JewellryContent = () => {
           <Col className="timeline3 pt-1">
             <div className="position-relative ">
               <div className="timeline-badge3 mt-4"></div>
-              <Container className="pt-lg-0 pt-2 w-80 pb-4 ps-7">
+              <Container className="pt-lg-0 pt-2 w-80 pb-4">
                 <p className=" para-text pe-lg-2 pe-3 text-center fs-5 fw-bold">
                   The Indian jewelry industry is a celebrated sector that
                   exhibits a remarkable ability to adapt to evolving trends in
@@ -35,9 +35,9 @@ const JewellryContent = () => {
               </Container>
             </div>
 
-            <div className="position-relative ">
+            <div className="position-relative iv-bg">
               <div className="timeline-badge3 mt-5"></div>
-              <Container className="iv-bg pt-5 pb-5 p-lg-5 " fluid>
+              <Container className="pt-5 pb-5 p-lg-5 ">
                 <p className=" text-white fs-2">
                   {" "}
                   We will help your business keep up with this dynamic industry

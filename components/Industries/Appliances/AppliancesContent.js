@@ -25,7 +25,7 @@ const AppliancesContent = () => {
           <Col className="timeline3">
             <div className="position-relative">
               <div className="timeline-badge3 mt-4"></div>
-              <Container className="pt-4 w-80 pb-4 pt-4 ps-7">
+              <Container className="pt-4 w-80 pb-4 pt-4">
                 <p className="text-black para-text pe-3 text-center">
                   The Indian Appliances and Consumer Electronics industry is
                   expected to double to Rs. 1.48 trillion by 2025{" "}

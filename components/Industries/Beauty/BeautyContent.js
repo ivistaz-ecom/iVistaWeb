@@ -26,7 +26,7 @@ const BeautyContent = () => {
           <Col className="timeline3">
             <div className="position-relative">
               <div className="timeline-badge3 mt-4"></div>
-              <Container className="pt-4 w-80 pb-4 pt-4 ps-7">
+              <Container className="pt-4 w-80 pb-4 pt-4 ">
                 <p className="text-black para-text pe-lg-2 pe-3 text-center">
                   The beauty and wellness market has been growing at a rapid
                   pace in India. The market in India was valued at INR 901.07
@@ -51,9 +51,9 @@ const BeautyContent = () => {
               </Container>
             </div>
 
-            <div className="position-relative">
+            <div className="position-relative iv-bg">
               <div className="mt-3"></div>
-              <Container className="iv-bg pb-5 pt-5 p-lg-5" fluid>
+              <Container className=" pb-5 pt-5 p-lg-5">
                 <p className="text-white fs-2">
                   To help your brand to stand out in a highly crowded market, we
                   will:

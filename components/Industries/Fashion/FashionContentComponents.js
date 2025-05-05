@@ -25,7 +25,7 @@ const FashionContentComponents = () => {
           <Col className="timeline3">
             <div className="position-relative ">
               <div className="timeline-badge3 mt-4"></div>
-              <Container className="w-80 pb-4 pt-4 ps-7">
+              <Container className="w-80 pb-4 pt-4">
                 <p className="text-black para-text text-center fw-bold fs-5">
                   According to an article by the Times of India, the fashion
                   industry is poised to{" "}
@@ -41,9 +41,9 @@ const FashionContentComponents = () => {
               </Container>
             </div>
 
-            <div className="position-relative p-0">
+            <div className="position-relative p-0 iv-bg ">
               <div className="timeline-badge3 mt-5"></div>
-              <Container className="iv-bg pt-5 pb-5 p-lg-5" fluid>
+              <Container className="pt-5 pb-5 p-lg-5">
                 <p className="text-white fs-2">
                   We will help you to capitalize on this market opportunity with
                   robust digital solutions that include:

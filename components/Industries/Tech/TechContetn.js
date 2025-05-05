@@ -38,9 +38,9 @@ const TechContetn = () => {
               </Container>
             </div>
 
-            <div className="position-relative ">
+            <div className="position-relative iv-bg ">
               <div className="timeline-badge3 mt-5"></div>
-              <Container className="iv-bg p-lg-5 p-3" fluid>
+              <Container className="p-lg-5 p-3">
                 <p className=" text-white fs-2">
                   {" "}
                   Our digital marketing services for Tech and IT brands include:

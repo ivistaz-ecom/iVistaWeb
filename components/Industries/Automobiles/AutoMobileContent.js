@@ -26,7 +26,7 @@ const AutoMobileContent = () => {
             <Col className="timeline3">
               <div className="position-relative">
                 <div className=" mt-4"></div>
-                <Container className="p w-80 pb-4 ps-7">
+                <Container className="p w-80 pb-4 ">
                   <p className="text-black para-text pe-lg-2 pe-3 text-center">
                     <Link
                       href="/pdf/THE_AUTOMOBILE_SECTOR_IN_INDIA.pdf"
@@ -64,11 +64,11 @@ const AutoMobileContent = () => {
               <div className="position-relative" fluid>
                 <div className="timeline-badge3 mt-5 p-0"> </div>
                 <Container className="iv-bg pt-5 pb-5" fluid>
-                  <p className="text-white para-text text-center w-80 mx-auto fs-3">
+                  <p className="text-white para-text text-center w-80 mx-auto fs-3 px-md-5">
                     Your brand to increase online enquiries, bookings and sales
                     conversion ratios
                   </p>
-                  <p className="text-white para-text text-center w-80 mx-auto fs-3">
+                  <p className="text-white para-text text-center w-80 mx-auto fs-3 px-md-5">
                     You to increase your qualified leads and sales conversion
                     ratios for you and for your dealers
                   </p>

@@ -37,7 +37,7 @@ function HeroBanner() {
       />
 
       <Container className="bg-white banner w-80 pb-5 mb-4  z-3 p-0">
-        <ScrollAnimationIOthers />
+        {/* <ScrollAnimationIOthers /> */}
         <Row className="d-flex align-items-start p-0">
           <article>
             <div className="timeline2">

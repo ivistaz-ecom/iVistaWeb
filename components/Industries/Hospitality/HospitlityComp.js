@@ -33,11 +33,10 @@ const HospitlityComp = () => {
               </Container>
             </div>
 
-            <div className="position-relative p-0">
+            <div className="position-relative p-0 iv-bg ">
               <div className="timeline-badge3 mt-5"></div>
               <Container
-                className="iv-bg d-flex flex-column justify-content-center pb-5 pt-5 text-center p-lg-5"
-                fluid
+                className="d-flex flex-column justify-content-center pb-5 pt-5 text-center p-lg-5"
               >
                 <p className="text-white para-text fs-3">
                   We can leverage our experience in digital marketing for the
@@ -59,8 +58,8 @@ const HospitlityComp = () => {
               </Container>
             </div>
 
-            <Container className="mt-5 mb-5 w-80 ps-7">
-              <p className="fs-2 text-black w-80 mx-auto pe-3 text-center">
+            <Container className="mt-5 mb-5 w-80">
+              <p className="fs-2 text-black mx-auto text-center">
                 Here are some numbers from our experience in digital marketing
                 for the hotel industry that will interest you.
               </p>

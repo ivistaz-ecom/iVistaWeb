@@ -40,9 +40,9 @@ const NgosContent = () => {
               </Container>
             </div>
 
-            <div className="position-relative ">
+            <div className="position-relative iv-bg">
               <div className="timeline-badge3 mt-5"></div>
-              <Container className="iv-bg pt-5 pb-5 ps-7" fluid>
+              <Container className="pt-5 pb-5">
                 <p className=" text-white fs-2 para-text">
                   Our digital marketing services for nonprofit organizations
                   will help your audience understand your niche and help create
