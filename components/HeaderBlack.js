@@ -57,7 +57,7 @@ function HeaderBlackNew({ setChatVisible }) {
     "/industries/hospitality": "Hospitality",
     "/industries/jewellery": "Jewelery",
     "/industries/ngos": "NGOs",
-    "/industries/technology-IT": "Techn/IT"
+    "/industries/technology-IT": "Tech/IT"
   };
 
   const companyMenuTitles = {
