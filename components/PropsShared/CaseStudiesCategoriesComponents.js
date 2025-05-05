@@ -96,51 +96,50 @@ const CaseStudiesCategoriesComponents = ({ categoryId }) => {
           {data ? ( // Check if data is available
             data.map((items) => (
               <div
-                className="iv-cards-categories col-12 d-flex flex-column text-start z-3"
-                key={items.id}
-              >
-                <Image
-                  src={items.acf.thumbnail_image.url}
-                  alt={items.title.rendered}
-                  className="w-100 img-fluid"
-                  width={100}
-                  height={600} // Adjust based on your actual image proportions
-                />
-                <Row className="p-3 bg-white shadow d-flex flex-lg-row flex-column justify-content-between align-items-center">
-                  <Col lg={4}>
-                    <div className="px-lg-4">
-                      <div
-                        className="fw-bold app fs-5 post-content-title"
-                        dangerouslySetInnerHTML={{
-                          __html: items.title.rendered,
-                        }}
-                      />
-                    </div>
-                  </Col>
-                  <Col lg={6}>
-                    <div>
-                      <p
-                        className="card-text three-line-show text-muted mb-3 pt-4 post-content"
-                        dangerouslySetInnerHTML={{
-                          __html: items.excerpt.rendered,
-                        }}
-                      />
-                    </div>
-                  </Col>
-                  <Col>
-                    <div
-                      className="iv-link-1 cursor-pointer app d-inline-flex align-items-center fs-5"
-                      onClick={() => handleShowModal(items)}
-                    >
-                      Learn More
-                      <FiArrowUpRight
-                        size={30}
-                        className=" rotate-90 fw-bold"
-                      />
-                    </div>
-                  </Col>
-                </Row>
+              className="iv-cards-categories col-12 d-flex flex-column text-start z-3"
+              key={items.id}
+            >
+              {/* Full-width Image */}
+              <Image
+                src={items.acf.thumbnail_image.url}
+                alt={items.title.rendered}
+                className="w-100 img-fluid"
+                width={100}
+                height={600}
+              />
+            
+              {/* Row with Title | Excerpt | Button */}
+              <div className="p-4 bg-white shadow d-flex flex-lg-row flex-column justify-content-between align-items-start gap-3">
+                
+                {/* Title */}
+                <div className="col-lg-4">
+                  <div
+                    className="fw-bold app fs-5 post-content-title"
+                    dangerouslySetInnerHTML={{ __html: items.title.rendered }}
+                  />
+                </div>
+            
+                {/* Excerpt */}
+                <div className="col-lg-6 flex my-auto">
+                  <p
+                    className="card-text three-line-show text-muted post-content"
+                    dangerouslySetInnerHTML={{ __html: items.excerpt.rendered }}
+                  />
+                </div>
+            
+                {/* Button */}
+                <div className="col-lg-2 flex my-auto">
+                  <div
+                    className="iv-link-1 cursor-pointer app d-inline-flex align-items-center fs-5"
+                    onClick={() => handleShowModal(items)}
+                  >
+                    Learn More
+                    <FiArrowUpRight size={30} className="rotate-90 fw-bold ms-2" />
+                  </div>
+                </div>
               </div>
+            </div>
+            
             ))
           ) : (
             <div className="text-white d-flex flex-column justify-content-center align-items-center">
@@ -209,10 +208,10 @@ const CaseStudiesCategoriesComponents = ({ categoryId }) => {
               pathname === "/traffic" ||
               pathname === "/keyword-ranking" ||
               pathname === "/engagement") && (
-              <Link href="/welcome" className="btn-13">
-                Enter website
-              </Link>
-            )}
+                <Link href="/welcome" className="btn-13">
+                  Enter website
+                </Link>
+              )}
             {(pathname === "/industries/appliances" ||
               pathname === "/industries/automobiles" ||
               pathname === "/industries/beauty-wellness" ||
@@ -221,10 +220,10 @@ const CaseStudiesCategoriesComponents = ({ categoryId }) => {
               pathname === "/industries/jewellery" ||
               pathname === "/industries/ngos" ||
               pathname === "/industries/technology-IT") && (
-              <Link href="/case-studies" className="btn-18 z-0">
-                View All Case Studies
-              </Link>
-            )}
+                <Link href="/case-studies" className="btn-18 z-0">
+                  View All Case Studies
+                </Link>
+              )}
           </>
         )}
       </Container>
