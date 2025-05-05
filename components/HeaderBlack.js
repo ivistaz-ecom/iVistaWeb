@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { FaBars } from "react-icons/fa";
 import Image from "next/image";
@@ -17,6 +17,7 @@ function HeaderBlackNew({ setChatVisible }) {
   const pathname = usePathname();
   const [show, setShow] = useState(false);
   const timeoutRef = useRef(null);
+  const [scrolled, setScrolled] = useState(false);
 
   const handleMouseEnter = () => {
     clearTimeout(timeoutRef.current);
@@ -30,6 +31,22 @@ function HeaderBlackNew({ setChatVisible }) {
       setChatVisible(true); // Show the chat script when the menu is closed
     }, 200); // Delay to prevent immediate closing
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      if (offset > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+  
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  
+
 
   return (
     <>
@@ -48,6 +65,15 @@ function HeaderBlackNew({ setChatVisible }) {
             flex-wrap: wrap !important;
             justify-content: space-between !important;
           }
+               
+          .header-container {
+            transition: background-color 0.4s ease, box-shadow 0.4s ease;
+          }
+
+          .header-scrolled {
+            background-color: white !important;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          }
 
           @media (max-width:767px){
             .dropdown-menu.show {
@@ -56,15 +82,15 @@ function HeaderBlackNew({ setChatVisible }) {
           }
         `}
       </style>
-    
+
       <Container
-        className={`p-0 position-fixed z-index-100 ${
-          pathname === "/our-team" ? "bg-white" : ""
-        } m-0`}
+        className={`p-0 position-fixed z-index-100 m-0 w-100 header-container ${scrolled ? "header-scrolled" : ""
+          } ${pathname === "/our-team" ? "bg-white" : ""}`}
         fluid
       >
 
-      {/* <Container className="p-0 position-fixed z-index-100 m-0" fluid> */}
+
+        {/* <Container className="p-0 position-fixed z-index-100 m-0" fluid> */}
 
         <Container className="w-80">
           <nav className="navbar bg-color z-index-100">
@@ -82,10 +108,10 @@ function HeaderBlackNew({ setChatVisible }) {
                 onMouseEnter={handleMouseEnter}
                 className={
                   pathname === "/art" ||
-                  pathname === "/art/services" ||
-                  pathname === "/art/services/digital-marketing" ||
-                  pathname === "/art/services/content-development-design" ||
-                  pathname === "/art/services/design-development"
+                    pathname === "/art/services" ||
+                    pathname === "/art/services/digital-marketing" ||
+                    pathname === "/art/services/content-development-design" ||
+                    pathname === "/art/services/design-development"
                     ? "btn btn-outline-black"
                     : pathname === "/service/website-design-and-development" ||
                       pathname === "/service/search-engine-optimization" ||
@@ -96,8 +122,8 @@ function HeaderBlackNew({ setChatVisible }) {
                       pathname === "/service/design" ||
                       pathname === "/service/videos" ||
                       pathname === "/our-clients"
-                    ? "btn btn-outline-custom"
-                    : "btn btn-outline"
+                      ? "btn btn-outline-custom"
+                      : "btn btn-outline"
                 }
                 type="button"
                 data-bs-toggle="offcanvas"

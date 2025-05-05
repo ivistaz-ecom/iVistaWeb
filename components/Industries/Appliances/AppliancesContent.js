@@ -55,13 +55,13 @@ const AppliancesContent = () => {
             <div className="position-relative">
               <div className="timeline-badge3 mt-"></div>
               <Container className=" w-80 pb-4 ps-7">
-                <p className="text-black fs-5 pe-3 fw-bold text-center">
+                <p className="text-black fs-4 pe-3 fw-bold text-center" >
                   The size of customers doing research online and buying offline
                   is rapidly shrinking. More and more buyers are now comfortable
                   buying even large appliances online. Undoubtedly, you would be
                   looking to capitalize on this opportunity.
                 </p>
-                <p className="text-black fs-5 pe-3 fw-bold text-center">
+                <p className="text-black fs-4 pe-3 fw-bold text-center">
                   Our carefully tailored digital marketing strategies will help
                   to increase online sales for appliances brands, boosting
                   visibility and engagement both on your brand e-store as well
@@ -75,7 +75,7 @@ const AppliancesContent = () => {
             <div className="position-relative" fluid>
               <div className="timeline-badge3 mt-5 p-0"> </div>
               <Container className="iv-bg pt-5 pb-5" fluid>
-                <p className="text-white para-text text-center w-80 mx-auto fs-3">
+                <p className="text-white para-text text-center w-80 mx-auto fs-3 container px-0 px-md-5">
                   We focus on strategies that optimize online sales for home
                   appliances brands, leveraging targeted campaigns and
                   data-driven insights to reach your ideal customers. Our
