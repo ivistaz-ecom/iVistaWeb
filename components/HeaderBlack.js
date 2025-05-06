@@ -55,7 +55,7 @@ function HeaderBlackNew({ setChatVisible }) {
     "/industries/beauty-wellness": "Beauty & Wellness",
     "/industries/fashion-accessories": "Fashion & Accessories",
     "/industries/hospitality": "Hospitality",
-    "/industries/jewellery": "Jewelery",
+    "/industries/jewellery": "Jewelry",
     "/industries/ngos": "NGOs",
     "/industries/technology-IT": "Tech/IT"
   };

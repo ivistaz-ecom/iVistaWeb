@@ -79,7 +79,7 @@ const CaseStudiesCategoriesComponents = ({ categoryId }) => {
           overflow: hidden !important;
           text-overflow: ellipsis !important;
           display: -webkit-box !important;
-          -webkit-line-clamp: 2 !important;
+          -webkit-line-clamp: 5 !important;
           -webkit-box-orient: vertical !important;
         }
         .post-content {
