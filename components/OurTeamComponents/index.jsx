@@ -13,7 +13,7 @@ const index = () => {
 
       <NewTeamPage />
 
-      <NewTeamPage/>
+      {/* <NewTeamPage/> */}
 
       <Footer />
     </>
