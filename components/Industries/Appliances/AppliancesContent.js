@@ -99,7 +99,7 @@ const AppliancesContent = () => {
               <Container className=" w-80 pb-4 pt-4 ps-7">
                 <p className="text-black fs-2 w-80 mx-auto pe-3 text-center">
                   Here’s how we have helped appliance brands to win in the<br/>
-                  e-commerce channel:
+                  e-commerce channel
                 </p>
               </Container>
             </div>

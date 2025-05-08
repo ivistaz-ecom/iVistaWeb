@@ -28,7 +28,7 @@ const HospitlityComp = () => {
               <Container className="w-80 pb-4 pt-3 pt-lg-0">
                 <p className="text-center para-text fw-bold fs-5">
                   In the last 12 years, iVistaz has built a deep digital
-                  hospitality practice .
+                  hospitality practice.
                 </p>
               </Container>
             </div>
@@ -61,7 +61,7 @@ const HospitlityComp = () => {
             <Container className="mt-5 mb-5 w-80">
               <p className="fs-2 text-black mx-auto text-center">
                 Here are some numbers from our experience in digital marketing
-                for the hotel industry that will interest you.
+                for the hotel industry that will interest you
               </p>
             </Container>
           </Col>

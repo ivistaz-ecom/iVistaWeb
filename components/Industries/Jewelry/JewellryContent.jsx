@@ -85,7 +85,7 @@ const JewellryContent = () => {
             <Container className="mt-5 mb-5 w-80 ">
               <p className="fs-2 text-center">
                 Here’s how we have helped jewelry brands to win in the <br />
-                e-commerce channel:
+                e-commerce channel
               </p>
             </Container>
           </Col>

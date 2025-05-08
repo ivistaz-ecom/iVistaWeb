@@ -89,7 +89,7 @@ const FashionContentComponents = () => {
             <Container className="mt-5 mb-5 w-80 ps-7">
               <p className="fs-2">
                 Here’s how we helped fashion and accessories brands secure a
-                winning edge:
+                winning edge
               </p>
             </Container>
           </Col>

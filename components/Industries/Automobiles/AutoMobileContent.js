@@ -85,7 +85,7 @@ const AutoMobileContent = () => {
                 <p className="fs-2 text-black text-center">
                   Here’s how we have helped brands win over the dynamic and
                   highly competitive industry through digital marketing for
-                  automobile brands:
+                  automobile brands
                 </p>
               </Container>
             </Col>

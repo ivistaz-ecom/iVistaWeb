@@ -105,7 +105,7 @@ const TechContetn = () => {
             <Container className="mt-5 mb-5 w-80">
               <p className="fs-2 text-center">
                 Here are some instances where our expertise and cutting-edge
-                solutions have propelled Tech/IT companies to success:
+                solutions have propelled Tech/IT companies to success
               </p>
             </Container>
           </Col>

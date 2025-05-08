@@ -122,7 +122,7 @@ const NgosContent = () => {
               <p className="fs-2 text-center">
                 Explore how we have partnered with organizations to create
                 meaningful change, amplify their reach, and drive impactful
-                outcomes:
+                outcomes
               </p>
             </Container>
           </Col>
