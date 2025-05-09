@@ -43,7 +43,7 @@ const HospitlityComp = () => {
                   hospitality industry to grow and sustain online room revenues
                   for your properties and in turn, help increase room occupancy,
                   RevPAR (Revenue Per Available Room) and ADR (Average Daily
-                  Rate) . We are also deeply aware that the customers of luxury
+                  Rate). We are also deeply aware that the customers of luxury
                   hospitality brands are highly discerning, and our focus will
                   be to enhance their overall digital experience with engaging
                   UI/UX and content.
